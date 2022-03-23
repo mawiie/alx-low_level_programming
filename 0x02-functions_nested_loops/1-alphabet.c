@@ -1,18 +1,5 @@
 #include "main.h"
 /**
- * Main - print_alphabet in lower case
+ * Main - print_alphabet
  *
- * Return - void 
- */
-void print_alphabet (void)
-{
-	char text = 'a';
-	
-	while (text<= 'z')
-	{
-		_putchar(text);
-		text++;
-	}
-	_putchar('\n');
-
-}
+ * Return 
