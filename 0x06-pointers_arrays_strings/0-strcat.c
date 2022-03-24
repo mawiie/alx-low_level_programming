@@ -17,13 +17,13 @@ char *_strcat(char *dest, char *src)
 		count++;
 	}
 
-	while (count2 >= 0)
+	while (src[count2] != '\0')
 	{
-		*(dest + count) == *(src + count2);
-		if ((*src + count2) == '\0')
-			break;
+		dest[count] = src[count2];
 		count++;
 		count2++;
 	}
+	
+	dest[count] = '\0';
 	return (dest);
 }
