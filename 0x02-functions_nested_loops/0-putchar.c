@@ -1,11 +1,9 @@
 #include "main.h"
 	
 /**
- * Main - prints _putchar
- *
- * Description - prints _putchar
- *
- * Return 0 (Success)
+ * main - prints _putchar
+ * description - prints _putchar
+ * Return: 0 (Success)
  */
 int main (void)
 {
@@ -14,7 +12,6 @@ int main (void)
 	for (int i=0; i<10; i++)
 	{
 		_putchar(text[i]);
-
 	}
 	_putchar('\n');
 
