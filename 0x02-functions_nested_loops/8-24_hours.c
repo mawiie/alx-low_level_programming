@@ -1,27 +1,26 @@
 #include "main.h"
+
 /**
- * main - prints the time from 00.00 till 23:59
+ * jack_bauer - prints time
  *
- * return void
+ * Description: prints a list of time
+ * Return: Always 0.
  */
+
 void jack_bauer(void)
 {
-	for(int ht = 0; ht < 3; ht++)
+	int i, j;
+
+	for (i = 0; i < 24; i++)
 	{
-		for(int hu = 0; hu < 5; hu++)
+		for (j = 0; j < 60; j++)
 		{
-			for(int mt = 0; mt < 6; mt++)
-			{
-				for(int mu = 0; mu<10; mu++)
-				{
-					_putchar(ht);
-					_putchar(hu);
-					_putchar(':');
-					_putchar(mt);
-					_putchar(mu);
-					_putchar('\n');
-				}
-			}
+			_putchar(i / 10 + 48);
+			_putchar(i % 10 + 48);
+			_putchar(':');
+			_putchar(j / 10 + 48);
+			_putchar(j % 10 + 48);
+			_putchar('\n');
 		}
 	}
 }
