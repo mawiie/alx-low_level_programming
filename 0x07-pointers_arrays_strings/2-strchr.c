@@ -16,5 +16,5 @@ char *_strchr(char *s, char c)
 	if (count == 0)
 		return (NULL);
 	else
-		return (s + count);
+		return (*(s + count));
 }
